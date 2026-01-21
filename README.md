@@ -2,16 +2,22 @@
 
 ## Overview
 Identity and access management system built with PHP, focused on secure authentication,
+# PHP Identity and Access Management
+
+## Overview
+Identity and access management system built with PHP, focused on secure authentication,
 session handling, and scalable architecture principles.
 
 ## Architecture
-MVC-inspired structure with clear separation of concerns.
+The application follows an MVC-inspired architecture to ensure clear separation
+between controllers, business logic, data access, and views.
 
-## Security Principles
-- Secure password hashing
-- Session-based authentication
-- SQL injection prevention via PDO
-- Controlled access to protected routes
+## Security Considerations
+- Passwords are hashed using `password_hash`
+- Sessions are regenerated after successful login
+- Prepared statements are used to prevent SQL injection
+- HTTP-only cookies are enforced for session handling
+- Access to protected routes is controlled via middleware
 
 ## Tech Stack
 - PHP
@@ -20,4 +26,5 @@ MVC-inspired structure with clear separation of concerns.
 
 ## Project Status
 ** In active development **
+session handling, and scalable architecture principles.
 
